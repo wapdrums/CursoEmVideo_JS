@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <!--Estilo-->
+    <style>
+        body{
+            background-color: rgb(226, 200, 236);
+        } 
+        h1{
+            color:rgb(81, 27, 97);
+        }
+        p{
+            color: rgb(72, 15, 99);
+        }
+    </style>
+
+</head>
+    <!--Conteudo-->
+<body>
+    <h1>Parabéns</h1>
+    <p>Você aprendeu fazer manipulação de dados!</p>
+
+
+    <!--Interatividade-->
+    <script>
+        var n1 = Number(prompt('Digite um numero: '))
+        var n2 = Number(prompt('Digite outro numero: '))
+        var soma = n1 + n2 // o prompt recebe apenas string, por isso retorna a soma de duas strings (mesmo que seja numero)
+        alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+
+        /* 
+
+        Exemplos:
+
+        'o aluno ' + nome + ' com ' + idade + ' anos tirou a nota 
+        ' + nota
+
+         ` O aluno ${nome} com ${idade} anos tirou a nota ${nota}` 
+
+        s.length = quantas letras tem a string
+
+        s.toUppercase = letra maiuscula
+
+        toLowerCase = letra miniscula
+        */
+    </script>
+</body>
+</html>
+
