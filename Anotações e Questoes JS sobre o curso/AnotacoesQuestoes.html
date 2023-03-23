@@ -111,9 +111,6 @@
     <p class="comentarios">/*comentario css*/</p>
 
     <p><strong>Variaveis:</strong></p>
-</body>
-</html>
-    
 
     <p><span class="comentarios">=</span> Rebece/atribuição (null significa que não recebe nada)</p>
     <p><span class="comentarios">Variavel:</span> Espaco/vaga: variaveis podem ter tamanhos diferentes, por isso podem ser strings ou numeros entre outros.</p>
@@ -137,7 +134,10 @@
     <li>é possivel usar letras e numeros</li>
     <li>é possivel usar acentos e simbolos</li>
     <li>Não pode ter espaço (usa _)</li>
-    <li>Não pode usar palavras reservadas do js, palavras que o js usa como comando (var, let, const, function etc)
+    <li>Não pode usar palavras reservadas do js, palavr
+        
+        
+        as que o js usa como comando (var, let, const, function etc)
     <strong>ATENÇÃO:</strong> </li>
     <li>* Maiusculas e minusculas fazem diferença</li>
     <li>* Nomes coerentes para as variaveis</li>
@@ -161,22 +161,30 @@
     <P><span class="comentarios">ctrol + L = </span>limpa o node no terminal</P>
     <P><span class="comentarios">object = array </span>(variavel especial)</P>
         
-    <h2>Aula 06</h2>    
+    <h3>Aula 06</h3>    
         <strong>Questoes:</strong>
         <p><strong>1 - O que é uma variavel?</strong> </p>
         <p>R: Local para guardar na memoria</p>
         <p><strong>2 - Como declarar uma variavel numerica inteira ou real usando js?</strong> </p>
         <p>R: parseInt(n)</p>
         <p><strong> 3 - Quais os tipos primitivos do js?</strong></p>
-        <p>String, number e boleanos</p>
-        <p>- o que significa colocar o valor null dentro de uma variavel?</p>
+        <li>string: representa um texto;</li>
+        <li> number: representa um valor numérico, tanto inteiro quanto decimal;</li>
+        <li> boolean: representa um valor verdadeiro ou falso;</li>
+        <li> undefined: representa um valor que não foi definido;</li>
+        <li> null: representa um valor nulo ou vazio;</li>
+        <li>  symbol: é um valor único e imutável usado como chave de propriedade de objeto.</li>
+        
+        <p><strong> 4 - o que significa colocar o valor null dentro de uma variavel?</p></strong>
+        <p>Em JavaScript, definir uma variável com o valor null significa que ela não possui nenhum valor ou conteúdo definido, sendo uma forma explícita de indicar que a variável existe, mas não possui nenhum valor ou objeto válido até que seja atribuído um valor posteriormente. É importante lembrar que null é diferente de undefined, que é usado para indicar que uma variável foi declarada, mas ainda não possui um valor atribuído.</p>
 
         <strong>O que vamos aprender?</strong>
         <p>- Manipulação de dados</p>
         <p>- Var, Let, const</p>
         <p>- number e string</p>
  
-        <span class="comentarios">number.parseInt(n)</span>
+        <strong><p> Anotações:</p></strong> 
+        <span class="comentarios">number.parseInt(n)</span> numeros inteiros
         <p><span class="comentarios">number.parseFloat(n) </span> 5.5 (ponto flutuante = parseFloat)</p>
         <p>ou pode ser usado somente <span class="comentarios">Number(n)</span></p>
     
@@ -186,5 +194,188 @@
     <p>template string = <span class="comentarios">`o nome dele é ${nome}`</span></p>
     <p><span class="comentarios">`${valor}`</span> = placeholder</p>
      
+    <strong> Como fazer colunas no html:</strong>
 
-    
+    <table>
+        <tr>
+          <td>Nomes:</td>
+          <td>CPF</td>
+          <td>Telefone</td>
+          <td>Email:</td>
+        </tr>
+        <tr>
+          <td>Maria da Silva</td>
+          <td>125.965.854.54</td>
+          <td>(11) 95848-5487</td>
+          <td>MariadaSilva@gmail.com</td>
+        </tr>
+      </table>
+
+        <p><strong>Aula 7 - Perguntas</strong></p>
+        <p><strong> 1 - Como é possivel guardar o valor digitado em um prompt dentro de uma variavel</p></strong>
+        <p><strong>2 - Como fazer com que um numero digitado em um prompt possa ser usado em calculos?</strong></p>
+        <p><strong>3 - Como transformar um texto todo para letras maiusculas?</strong></p>
+        <p><strong>4 - como montar um valor em valor monetario?</strong></p>
+
+        <h3>Operadores Javascript:</h3>
+
+        <li>Aritmeticos</li>
+        <p><span class="comentarios">+ - * / % **</span> usados para fazer calculo</p> 
+
+        <p>Exemplos no node:</p>
+        
+        <p>> 5+2</p>
+        <p class="resultado">7</p>
+        <p>> 5-2</p>
+        <p class="resultado">3</p>
+        <p>> 5*2</p>
+        <p class="resultado">10</p>
+        <p>> 5/2</p>
+        <p class="resultado">2.5</p>
+        <p> > 5%2</p> 
+        <p class="resultado">1</p> o resto da divisão (divisão inteira)
+        <p>> 5**2</p>
+        <p class="resultado">25</p> potencia (5 ao quadrado, elevado a 2)
+
+        <p><strong>Atenção:</strong></p>
+
+        <p>5 + 3 / 2</p>
+        <p>R: primeiro a divisão, 6.5</p>
+
+        <p>(5 + 3) / 2</p>
+        <p>R: soma primeiro depois divide, 4</p>
+        
+        <p><strong> Ordem de precedencia:
+        </strong></p>
+
+        <p>()</p>
+        <p>**</p>
+        <p>*</p>
+        <p>/</p>
+        <p>%</p>
+        <p>+</p>
+        <p>-</p>
+
+        <li>Atribuição</li>
+        
+        <p>> a = 5+3</p>
+        <p class="resultado">8</p>
+        <p>> b = a % 5</p>
+        <p class="resultado">3</p>
+        <p>> c = 5 * b ** 2</p>
+        <p class="resultado">45</p>
+        <p>> d = 10 - a /2</p>
+        <p class="resultado">6</p>
+        <p>> e = 6 * 2 / 6</p>
+        <p class="resultado"> 2</p>
+        <p>> f = b % e + 4 / e</p>
+        <p class="resultado">3</p>
+
+        Auto Atribuições
+
+        var n = 3
+        n = n + 4     ou  n += 4
+        n = n - 5     ou  n -= 5 
+        
+        Vai seguindo a sequencia
+        
+        Incremento
+
+        var x = 5
+        x = x + 1   x +=1    ou x++ ou ++x  (mais um)
+        x = x - 1   x -= 1   ou x-- ou --x (menos um)
+
+        Aula 8 - Operadores II
+        Perguntas:
+        Para que serve o operador % em js?
+        6 + 4 / 2?  qual a resposta?
+        Var n = 10 / n +=5 fica quanto?
+        O que acontece quando adiciona ++ ou --?
+
+        Relacionais: resultam valor boolean:
+        > maior
+        < menor
+        >= maior ou igual
+        <= menor ou igual
+        == igualdade (comparação)
+        != nao igual/diferente
+        
+        identidade
+
+        5 == '5' true
+        5 == 5 true
+        dessa forma não verifica igualdade de tipos (string e number)
+
+        5 === '5' false
+        porque verifica o tipo
+
+        Logicos:
+
+        ! negação/Não
+        && conjunção ou 'e'
+        || siginifica 'ou'
+
+        primeiro não, depois 'e' e depois 'ou'
+
+        Ordem de precedencia:
+        Aritmeticos () ** /
+        > < >=
+        ! 
+        &&
+        ||
+
+
+        Ternarios
+        ? 
+        : 
+
+        ex:
+        teste ? true : false
+        
+        var media = 5.5
+        media > 7 ? 'aprovado' : 'reprovado'
+        R: reprovado
+        
+        <H2>Modulo C</H2>
+
+        - Dom document object model
+        - arvore Dom
+        - Manipulação Dom
+
+        Aula 09
+        1 - Qual a diferença entre =, == e ===?
+        2 - Em uma mesma expressao, temos os operadores || e && qual deles usa primeiro?
+        3 - sabe usar o ternario?
+
+        O que é dom? modelo de objetos para documentos.
+        Não funciona no nodeJs
+        raiz da arvore dom = window
+
+        Arvore dom:
+
+                window
+
+        location document history
+
+                  html
+
+            head   body 
+
+    meta title      h1 p p div 
+                        
+                        strong
+
+        AULA 10 Questoes
+
+        o que significa dom?
+        document object model
+        consegue montar uma arvore dom de um site simples?
+        o que são elementos parents e child
+        quais os 5 principais metodos para selecionar elementos dom?
+
+        5 tecnicas
+        nome, id tagname, classname, queryselector
+
+        
+    </body>
+    </html>

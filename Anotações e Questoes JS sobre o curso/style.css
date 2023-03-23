@@ -16,3 +16,11 @@ h2{
 .comentarios{
     color:green;
 }
+
+.resultado{
+    color: red;
+}
+
+td{
+    border: 2px solid black;
+  }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: lightcoral;
+            font: normal 16pt arial;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM </h1>
+    <p>Selecionando elementos </p>
+    <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+    
+    <script>
+        //window.document.write('Ola mundo') 
+        // forma simples de exibir na tela
+        //window.document.write(window.document.characterSet)
+        // qual tipo de charset
+        //window.document.write(window.document.URL)
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        //elements no plural, porque pega mais de 1 elemento
+        //[0] siginifica que esta pegando o primeiro p (array)
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+
+        var corpo = window.document.body
+        corpo.style.background = 'pink'
+
+        document.write(p1.innerHTML)
+
+        var d = window.document.getElementById('msg')
+
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+        
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+        //id div#msg = pratico para alterações praticas (recente)
+        // class div.msg
+
+
+        
+        //window.alert(p1.innerText)
+        // mostra a url
+
+        // elemento é tudo que aparece na arvore dom
+        // dom = navegar pela arvore 
+
+        /* pode pesquisar por:
+        
+        marca
+        getElementsByTagName() // p div 
+        id
+        getElementById()
+        nome
+        getElementsByName() (plural, usa [0] pra selecional qual)
+        classe 
+        seletor
+        */
+
+
+    </script>
+</body>
+</html>
