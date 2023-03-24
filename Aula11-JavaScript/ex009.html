@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade:</title>
+</head>
+<style>
+    body{
+        background-color: pink;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caixa{
+        background-color: coral;
+        border-radius: 15px;
+        width: 650px;
+        height: 250px;
+        margin-left: 320px;
+        margin-top: 120px;
+    }
+</style>
+<body>
+    <div class="caixa">
+        <br>
+        <br>
+    <h1>Sistema de nacionalidade:</h1>
+    <div> <p> Verifique a sua nacionalidade!</p></div>
+    Aonde você vive? <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" onclick="mostrar()">
+    <br>
+    <div id="res">
+    </div>
+
+
+</div>
+    <script>
+
+        function mostrar() {
+            var nacional = document.querySelector('input#nacionalidade')
+            var res = document.querySelector('div#res')
+            var vive = (nacional.value)
+
+
+            if (vive == 'Brasil') {
+                res.innerHTML = `<p>Você é Brasileiro</p>`
+            } else {
+                res.innerHTML = `<p>Você é Estrangeiro</p>`
+            }
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
